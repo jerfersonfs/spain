@@ -1,0 +1,10 @@
+section{
+    height: 100vh;
+}
+body{
+    overflow: hidden;
+    margin: 0;
+}
+.carossel, img{
+    height: 160px;
+}
