@@ -8,3 +8,35 @@ body{
 .carossel, img{
     height: 160px;
 }
+button{
+    padding: 15px;
+    background-color: #eece1c;
+    border-radius: 8px;
+    border: none;
+}
+button:hover{
+    padding: 20px;
+    font-size: 15px;
+    background-color: #eece1c8f;
+}
+#first{
+    color: #fff;
+    font-size: 46px;
+    text-align: center;
+    padding: 20px;
+
+
+    background-image: linear-gradient(rgba(2, 6, 23, 0.93), rgba(23, 10, 2, 0.45)), url(../pictures/wallpaper1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#second{
+    text-align: center;
+    padding: 20px;
+    font-size: 26px;
+}
+#third{
+    text-align: center;
+    padding: 20px;
+    font-size: 36px;
+}
