@@ -18,25 +18,59 @@ button:hover{
     padding: 20px;
     font-size: 15px;
     background-color: #eece1c8f;
+    border: 1px solid #fff;
 }
 #first{
-    color: #fff;
+    /* SIZE */
     font-size: 46px;
-    text-align: center;
     padding: 20px;
 
+    /* POSICIONAMENTO */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /*centro vertical*/
+    align-items: center; /*centro horizontal*/
+    gap: 50px;
 
-    background-image: linear-gradient(rgba(2, 6, 23, 0.93), rgba(23, 10, 2, 0.45)), url(../pictures/wallpaper1.jpg);
+    /* CORES E IMAGEM*/
+    color: #fff;
+    background-image: linear-gradient(rgb(8, 4, 4), rgba(27, 18, 12, 0.45)), url(../pictures/wallpaper1.jpg);
     background-position: center;
     background-size: cover;
 }
 #second{
-    text-align: center;
+    /*TAMANHO*/
     padding: 20px;
     font-size: 26px;
+
+    /*POSICIONAMENTO*/
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /*centro vertical*/
+    align-items: center; /*centro horizontal*/
+    gap: 30px;
+
+    /*CORES E FUNDO*/
 }
 #third{
-    text-align: center;
     padding: 20px;
     font-size: 36px;
+    
+    /*POSICIONAMENTO*/
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /*centro vertical*/
+    align-items: center; /*centro horizontal*/
+    gap: 20px;
+
+    background: linear-gradient(#d41717e1,#d4c117f8,#d41717e1)
+}
+#third button:hover{
+    padding: 18px;
+    font-size: 15px;
+    background-color: #ee811cee;
+    border: 1px solid #fff;
 }
