@@ -1,9 +1,15 @@
-section{
-    height: 100vh;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 body{
     overflow: hidden;
     margin: 0;
+}
+section{
+    height: 100vh;
 }
 button{
     padding: 15px;
@@ -42,7 +48,7 @@ button:hover{
 }
 #second{
     /*TAMANHO*/
-    padding: 20px;
+    padding: 5px;
     font-size: 26px;
 
     /*POSICIONAMENTO*/
@@ -51,7 +57,7 @@ button:hover{
     flex-direction: column;
     justify-content: center; /*centro vertical*/
     align-items: center; /*centro horizontal*/
-    gap: 30px;
+    gap: 10px;
 
     /*CORES E FUNDO*/
     
