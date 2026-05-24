@@ -2,111 +2,71 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
   font-family: Arial, Helvetica, sans-serif;
 }
 
-body {
-  background: #ececec;
+:root {
+  --vermelho: #b71c1c;
+  --amarelo: #f4c430;
+  --escuro: #242424;
+  --cinza: #f2f2f2;
+  --branco: #fff;
 }
 
-/* HEADER */
+body { background: var(--cinza); color: var(--escuro); }
 
 .header {
-  height: 60px;
-
-  background: linear-gradient(
-    90deg,
-    #1d1d1d,
-    #2b2017,
-    #1d1d1d
-  );
-
-  border-bottom: 3px solid #ff7b00;
-
+  position: sticky;
+  top: 0;
+  background: var(--escuro);
+  border-bottom: 3px solid var(--amarelo);
   display: flex;
   align-items: center;
-
-  padding: 0 25px;
+  justify-content: space-between;
+  padding: 14px 20px;
 }
 
-/* ÁREAS */
+.logo { color: var(--amarelo); font-size: 1.5rem; }
+.menu { list-style: none; display: flex; gap: 20px; }
+.menu a, .voltar { color: var(--branco); text-decoration: none; font-size: 0.95rem; }
+.menu a:hover, .voltar:hover { color: var(--amarelo); }
 
-.header-left {
-  width: 220px;
-
-  display: flex;
-  align-items: center;
+main { max-width: 1050px; margin: 0 auto; padding: 30px 20px; }
+.hero-home {
+  background: linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)), url('../pictures/wallpaper1.jpg') center/cover;
+  color: var(--branco);
+  border-radius: 12px;
+  padding: 50px 24px;
+  margin-bottom: 26px;
 }
 
-.header-center {
-  flex: 1;
+h1, h2 { margin-bottom: 12px; }
+p { margin-bottom: 10px; }
 
-  display: flex;
-  justify-content: center;
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+}
+.card {
+  background: var(--branco);
+  border-radius: 10px;
+  padding: 14px;
+  box-shadow: 0 2px 7px rgba(0,0,0,.08);
 }
 
-.header-right {
-  width: 220px;
+.lista { padding-left: 18px; }
+.lista li { margin-bottom: 8px; }
 
-  display: flex;
-  justify-content: flex-end;
+footer {
+  background: var(--escuro);
+  color: var(--branco);
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
 }
 
-/* LOGO */
-
-.logo {
-  color: white;
-
-  font-size: 30px;
-  font-weight: bold;
-}
-
-/* MENU */
-
-.menu {
-  list-style: none;
-
-  display: flex;
-  align-items: center;
-
-  gap: 40px;
-}
-
-/* LINKS */
-
-.menu a {
-  color: #d4d4d4;
-
-  text-decoration: none;
-
-  font-size: 15px;
-  font-weight: 600;
-
-  transition: 0.2s;
-}
-
-.menu a:hover {
-  color: white;
-}
-
-/* BOTÃO */
-
-.header-right button {
-  background: transparent;
-
-  border: none;
-
-  color: #d4d4d4;
-
-  font-size: 15px;
-  font-weight: 600;
-
-  cursor: pointer;
-
-  transition: 0.2s;
-}
-
-.header-right button:hover {
-  color: white;
+@media (max-width: 760px) {
+  .header { flex-direction: column; gap: 10px; }
+  .menu { flex-wrap: wrap; justify-content: center; }
 }
