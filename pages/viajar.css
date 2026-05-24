@@ -63,7 +63,7 @@ a{
     font-weight: bold;
 }
 
-/* Conteudo principal */
+/* Planejamento de viagem */
 main{
     margin: 0 auto;
     max-width: 1180px;
@@ -73,8 +73,8 @@ main{
 .hero-interno{
     align-items: flex-end;
     background-image:
-        linear-gradient(90deg, rgba(48, 29, 22, 0.82), rgba(48, 29, 22, 0.18)),
-        url("https://images.unsplash.com/photo-1543783207-ec64e4d95325?auto=format&fit=crop&w=1700&q=80");
+        linear-gradient(90deg, rgba(48, 29, 22, 0.81), rgba(48, 29, 22, 0.13)),
+        url("https://images.unsplash.com/photo-1558642084-fd07fae5282e?auto=format&fit=crop&w=1700&q=80");
     background-position: center;
     background-size: cover;
     border-radius: 30px;
@@ -109,109 +109,78 @@ main{
     line-height: 1.7;
 }
 
-/* Cards que ficam por cima da imagem */
-.atalhos{
+.planejamento{
     display: grid;
-    gap: 21px;
-    grid-template-columns: repeat(3, 1fr);
-    margin: -42px auto 66px;
-    max-width: 1035px;
-    position: relative;
+    gap: 58px;
+    grid-template-columns: 0.86fr 1.14fr;
+    margin: 62px 0 56px;
 }
 
-.atalhos article{
-    background-color: #fff;
-    border-radius: 20px;
-    box-shadow: 0 13px 32px rgba(72, 43, 25, 0.08);
-    padding: 30px 27px;
-}
-
-.atalhos span{
-    color: #9f241e;
-    font-size: 12px;
-    font-weight: bold;
-    letter-spacing: 3px;
-}
-
-.atalhos h2{
-    font-family: "Playfair Display", Georgia, serif;
-    font-size: 25px;
-    margin: 14px 0 12px;
-}
-
-.atalhos p{
-    color: #6d5c56;
-    font-size: 14px;
-    line-height: 1.7;
-    margin-bottom: 24px;
-}
-
-.atalhos a{
-    color: #9f241e;
-    font-size: 13px;
-    font-weight: bold;
-}
-
-/* Secao de informacoes */
-.faixa{
-    align-items: center;
-    background: linear-gradient(125deg, #f2dfbe, #fff7eb);
-    border-radius: 28px;
-    display: grid;
-    gap: 60px;
-    grid-template-columns: 1fr 1fr;
-    padding: 58px;
-}
-
-.faixa-texto h2{
+.planejamento h2,
+.chamada h2{
     font-family: "Playfair Display", Georgia, serif;
     font-size: 40px;
     line-height: 1.18;
     margin-bottom: 18px;
 }
 
-.faixa-texto > p:not(.etiqueta){
+.paragrafo{
     color: #6d5c56;
     line-height: 1.78;
+}
+
+/* Passos da viagem */
+.passos article{
+    border-bottom: 1px solid #eadbc5;
+    display: flex;
+    gap: 25px;
+    padding: 0 0 27px;
+}
+
+.passos article + article{
+    padding-top: 27px;
+}
+
+.passos strong{
+    color: #9f241e;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.passos h3{
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 22px;
+    margin-bottom: 13px;
+}
+
+.passos p{
+    color: #6d5c56;
+    font-size: 14px;
+    line-height: 1.72;
+}
+
+.chamada{
+    align-items: center;
+    background-color: #f2dfc5;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-between;
+    padding: 43px 48px;
+}
+
+.chamada h2{
+    margin-bottom: 0;
+    max-width: 650px;
 }
 
 .botao{
     background: linear-gradient(120deg, #9f241e, #c84627);
     border-radius: 26px;
     color: #fff;
-    display: inline-block;
     font-size: 14px;
     font-weight: bold;
-    margin-top: 32px;
     padding: 15px 26px;
-}
-
-.botao:hover{
-    transform: translateY(-2px);
-}
-
-.lista-numeros{
-    display: grid;
-    gap: 17px;
-    grid-template-columns: repeat(2, 1fr);
-}
-
-.lista-numeros div{
-    background-color: rgba(255, 255, 255, 0.7);
-    border-radius: 16px;
-    padding: 21px;
-}
-
-.lista-numeros strong{
-    color: #9f241e;
-    display: block;
-    font-size: 20px;
-    margin-bottom: 8px;
-}
-
-.lista-numeros span{
-    color: #6d5c56;
-    font-size: 13px;
+    white-space: nowrap;
 }
 
 /* Rodape */
@@ -258,26 +227,20 @@ main{
         font-size: 38px;
     }
 
-    .atalhos{
+    .planejamento{
         grid-template-columns: 1fr;
-        margin: 22px 0 45px;
     }
 
-    .faixa{
-        gap: 38px;
-        grid-template-columns: 1fr;
-        padding: 38px 27px;
+    .chamada{
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 27px;
+        padding: 34px 27px;
     }
 
     .rodape{
         flex-direction: column;
         gap: 12px;
         padding: 25px 20px;
-    }
-}
-
-@media (max-width: 520px){
-    .lista-numeros{
-        grid-template-columns: 1fr;
     }
 }

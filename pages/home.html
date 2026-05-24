@@ -1,30 +1,100 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Espanha em suas mãos</title>
-    <link rel="stylesheet" href="home.css">
-</head>
-<body>
-    <header class="header">
-        <div>
-            <h2 class="logo">Espanha</h2>
-        </div>
-        <div class="header-center">
-                <nav class="navbar">
-        <ul class="menu">
-            <li><a href="">Home</a></li>
-            <li><a href="">Influencias</a></li>
-            <li><a href="">Lugares</a></li>
-            <li><a href="">Viajar</a></li>
-            <li><a href="">Sobre</a></li>
-        </ul>
-        </div>
-        <div class="header-right">    
-            <button onclick="window.location.href='../landing/index.html'">Voltar</button>
-        </div>
-    </nav>
-    </header>
-</body>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Espanha | Home</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="home.css">
+    </head>
+    <body>
+        <header class="cabecalho">
+            <a href="../landing/index.html" class="marca">
+                <img src="../imagens/bandeira-espanha.svg" alt="Bandeira da Espanha" class="bandeira">
+                Espanha
+            </a>
+
+            <nav class="menu">
+                <a class="ativo" href="home.html">Home</a>
+                <a href="lugares.html">Lugares</a>
+                <a href="influencias.html">Cultura</a>
+                <a href="viajar.html">Viajar</a>
+                <a href="sobre.html">Sobre</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero-interno hero-home">
+                <div>
+                    <p class="etiqueta">Bem-vindo à Espanha</p>
+                    <h1>Escolha por onde sua descoberta vai começar.</h1>
+                    <p>
+                        Um país de paisagens variadas, cidades vibrantes,
+                        patrimônios históricos e uma cultura que se vive à mesa e nas ruas.
+                    </p>
+                </div>
+            </section>
+
+            <section class="atalhos">
+                <article>
+                    <span>01</span>
+                    <h2>Lugares</h2>
+                    <p>De Madri à costa mediterrânea, encontre destinos para o roteiro.</p>
+                    <a href="lugares.html">Explorar destinos &rarr;</a>
+                </article>
+
+                <article>
+                    <span>02</span>
+                    <h2>Cultura</h2>
+                    <p>Arte, culinária, língua e celebrações que marcam a identidade espanhola.</p>
+                    <a href="influencias.html">Conhecer influências &rarr;</a>
+                </article>
+
+                <article>
+                    <span>03</span>
+                    <h2>Viagem</h2>
+                    <p>Dicas essenciais para pensar em época, transporte e experiências.</p>
+                    <a href="viajar.html">Montar um plano &rarr;</a>
+                </article>
+            </section>
+
+            <section class="faixa">
+                <div class="faixa-texto">
+                    <p class="etiqueta">Em números</p>
+                    <h2>Um destino europeu de grande diversidade.</h2>
+                    <p>
+                        A Espanha ocupa grande parte da Península Ibérica
+                        e reúne regiões com tradições, paisagens e sabores próprios.
+                    </p>
+                    <a class="botao" href="sobre.html">Ver informações do país</a>
+                </div>
+
+                <div class="lista-numeros">
+                    <div>
+                        <strong>49.077.984</strong>
+                        <span>habitantes (2025)</span>
+                    </div>
+                    <div>
+                        <strong>505.983 km²</strong>
+                        <span>área territorial</span>
+                    </div>
+                    <div>
+                        <strong>Euro</strong>
+                        <span>moeda oficial</span>
+                    </div>
+                    <div>
+                        <strong>Espanhol</strong>
+                        <span>língua oficial da UE</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="rodape">
+            <p>Projeto escolar: uma vitrine para conhecer a Espanha.</p>
+            <a href="../landing/index.html">Voltar à apresentação</a>
+        </footer>
+    </body>
 </html>

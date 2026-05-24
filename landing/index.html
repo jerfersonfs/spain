@@ -1,38 +1,118 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bem vindo à Espanha</title>
-    <link rel="stylesheet" href="index.css">
-</head>
-<body>
-    <section id="first">
-       <h1>Espanha</h1>
-       <h3>Um país de muita cultura e harmonia</h3>
-       <button onclick="window.location.href='../pages/home.html'">Saiba mais</button>
-       <!--
-        -- BOTÃO PARA INDICADOR PARA SCROLL 
-       <button onclick></button>
-       -->
-    </section>
-    <section id="second">
-        <h1>O guia legítimo</h1>
-        <h1> de um dos país mais tradicionais do mundo</h1>
-        <div class="carossel">
-            <img src="../pictures/img1.jpg" alt="Madrid" title="Madrid">
-            <img src="../pictures/img2.jpg" alt="Barcelona" title="Barcelona">
-            <img src="../pictures/img4.jfif" alt="Ibiza" title="Ibiza">
-            <img src="../pictures/img3" alt="Sevilha - Plaza Espanã" title="Sevilha - Plaza Espanã">
-            <img src="../pictures/img5.jfif" alt="Granada" title="Sevilha">
-            <img src="../pictures/img6.jfif" alt="Toledo" title="Toledo" >
-       </div>
-    </section>
-    <section id="third">
-        <h1>Comece a explorar, não perca tempo!</h1>
-        <button onclick="window.location.href='../pages/home.html'">Explore</button>
-    </section>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Espanha | Uma viagem para sentir</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <header class="cabecalho">
+            <a href="index.html" class="marca">
+                <img src="../imagens/bandeira-espanha.svg" alt="Bandeira da Espanha" class="bandeira">
+                Espanha
+            </a>
 
-    <script src="script.js"></script>
-</body>
+            <nav class="menu">
+                <a href="../pages/lugares.html">Lugares</a>
+                <a href="../pages/influencias.html">Cultura</a>
+                <a href="../pages/viajar.html">Planeje</a>
+            </nav>
+
+            <a href="../pages/home.html" class="botao botao-claro">Explorar</a>
+        </header>
+
+        <main>
+            <section class="hero">
+                <div class="hero-conteudo">
+                    <p class="destaque">Seu próximo destino começa aqui</p>
+                    <h1>Conheça a Espanha com todos os sentidos.</h1>
+                    <p class="descricao">
+                        Ruas cheias de arte, praias iluminadas, sabores marcantes
+                        e cidades onde história e vida moderna caminham juntas.
+                    </p>
+
+                    <div class="acoes">
+                        <a href="../pages/home.html" class="botao botao-principal">
+                            Começar a viagem
+                        </a>
+                        <a href="#descubra" class="link-seta">Ver destaques &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="cartao-flutuante">
+                    <p>Uma experiência para guardar</p>
+                    <strong>Sol, cultura e sabor</strong>
+                    <span>do Mediterrâneo às grandes cidades</span>
+                </div>
+            </section>
+
+            <section class="numeros" aria-label="Dados da Espanha">
+                <article>
+                    <strong>49 milhões</strong>
+                    <span>de habitantes em 2025</span>
+                </article>
+                <article>
+                    <strong>505.983 km²</strong>
+                    <span>de território</span>
+                </article>
+                <article>
+                    <strong>Madri</strong>
+                    <span>capital do país</span>
+                </article>
+                <article>
+                    <strong>1986</strong>
+                    <span>entrada na União Europeia</span>
+                </article>
+            </section>
+
+            <section class="descubra" id="descubra">
+                <div class="titulo-secao">
+                    <p class="destaque">Descubra</p>
+                    <h2>Há uma Espanha para cada vontade.</h2>
+                </div>
+
+                <div class="vitrines">
+                    <article class="vitrine vitrine-cidades">
+                        <p>Cidades</p>
+                        <h3>Arquitetura, museus e passeios inesquecíveis.</h3>
+                        <a href="../pages/lugares.html">Conhecer lugares</a>
+                    </article>
+
+                    <article class="vitrine vitrine-sabores">
+                        <p>Experiências</p>
+                        <h3>Tapas, festas e ritmos que aproximam pessoas.</h3>
+                        <a href="../pages/influencias.html">Sentir a cultura</a>
+                    </article>
+
+                    <article class="vitrine vitrine-planejamento">
+                        <p>Planejamento</p>
+                        <h3>Informações simples para transformar desejo em roteiro.</h3>
+                        <a href="../pages/viajar.html">Preparar a viagem</a>
+                    </article>
+                </div>
+            </section>
+
+            <section class="convite">
+                <div>
+                    <p class="destaque">Espanha em detalhes</p>
+                    <h2>Mais do que visitar: viver um pouco de cada lugar.</h2>
+                </div>
+                <a href="../pages/home.html" class="botao botao-principal">Entrar na Home</a>
+            </section>
+        </main>
+
+        <footer class="rodape">
+            <p>Projeto escolar: uma vitrine para conhecer a Espanha.</p>
+            <p>
+                Dados:
+                <a href="https://european-union.europa.eu/principles-countries-history/eu-countries/spain_pt" target="_blank" rel="noopener noreferrer">
+                    União Europeia
+                </a>
+            </p>
+        </footer>
+    </body>
 </html>

@@ -63,7 +63,7 @@ a{
     font-weight: bold;
 }
 
-/* Conteudo principal */
+/* Cultura da Espanha */
 main{
     margin: 0 auto;
     max-width: 1180px;
@@ -73,8 +73,8 @@ main{
 .hero-interno{
     align-items: flex-end;
     background-image:
-        linear-gradient(90deg, rgba(48, 29, 22, 0.82), rgba(48, 29, 22, 0.18)),
-        url("https://images.unsplash.com/photo-1543783207-ec64e4d95325?auto=format&fit=crop&w=1700&q=80");
+        linear-gradient(90deg, rgba(48, 29, 22, 0.80), rgba(48, 29, 22, 0.12)),
+        url("https://images.unsplash.com/photo-1515443961218-a51367888e4b?auto=format&fit=crop&w=1700&q=80");
     background-position: center;
     background-size: cover;
     border-radius: 30px;
@@ -109,109 +109,62 @@ main{
     line-height: 1.7;
 }
 
-/* Cards que ficam por cima da imagem */
-.atalhos{
-    display: grid;
-    gap: 21px;
-    grid-template-columns: repeat(3, 1fr);
-    margin: -42px auto 66px;
-    max-width: 1035px;
-    position: relative;
+.introducao{
+    margin: 61px 0 35px;
+    max-width: 700px;
 }
 
-.atalhos article{
-    background-color: #fff;
-    border-radius: 20px;
-    box-shadow: 0 13px 32px rgba(72, 43, 25, 0.08);
-    padding: 30px 27px;
-}
-
-.atalhos span{
-    color: #9f241e;
-    font-size: 12px;
-    font-weight: bold;
-    letter-spacing: 3px;
-}
-
-.atalhos h2{
-    font-family: "Playfair Display", Georgia, serif;
-    font-size: 25px;
-    margin: 14px 0 12px;
-}
-
-.atalhos p{
-    color: #6d5c56;
-    font-size: 14px;
-    line-height: 1.7;
-    margin-bottom: 24px;
-}
-
-.atalhos a{
-    color: #9f241e;
-    font-size: 13px;
-    font-weight: bold;
-}
-
-/* Secao de informacoes */
-.faixa{
-    align-items: center;
-    background: linear-gradient(125deg, #f2dfbe, #fff7eb);
-    border-radius: 28px;
-    display: grid;
-    gap: 60px;
-    grid-template-columns: 1fr 1fr;
-    padding: 58px;
-}
-
-.faixa-texto h2{
+.introducao h2{
     font-family: "Playfair Display", Georgia, serif;
     font-size: 40px;
     line-height: 1.18;
-    margin-bottom: 18px;
 }
 
-.faixa-texto > p:not(.etiqueta){
-    color: #6d5c56;
-    line-height: 1.78;
-}
-
-.botao{
-    background: linear-gradient(120deg, #9f241e, #c84627);
-    border-radius: 26px;
-    color: #fff;
-    display: inline-block;
-    font-size: 14px;
-    font-weight: bold;
-    margin-top: 32px;
-    padding: 15px 26px;
-}
-
-.botao:hover{
-    transform: translateY(-2px);
-}
-
-.lista-numeros{
+/* Cards das experiencias */
+.experiencias{
     display: grid;
-    gap: 17px;
-    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
 }
 
-.lista-numeros div{
-    background-color: rgba(255, 255, 255, 0.7);
-    border-radius: 16px;
-    padding: 21px;
+.experiencias article{
+    background-color: #fff;
+    border: 1px solid #eadbc5;
+    border-radius: 20px;
+    padding: 28px 24px 32px;
 }
 
-.lista-numeros strong{
+.numero{
     color: #9f241e;
     display: block;
-    font-size: 20px;
-    margin-bottom: 8px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 21px;
 }
 
-.lista-numeros span{
+.experiencias h3{
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 22px;
+    margin-bottom: 13px;
+}
+
+.experiencias p{
     color: #6d5c56;
-    font-size: 13px;
+    font-size: 14px;
+    line-height: 1.72;
+}
+
+.frase{
+    background: linear-gradient(120deg, #681713, #9f241e);
+    border-radius: 25px;
+    color: #fff;
+    font-family: "Playfair Display", Georgia, serif;
+    font-size: 30px;
+    line-height: 1.55;
+    margin-top: 52px;
+    padding: 48px 70px;
+    text-align: center;
 }
 
 /* Rodape */
@@ -258,14 +211,12 @@ main{
         font-size: 38px;
     }
 
-    .atalhos{
+    .experiencias{
         grid-template-columns: 1fr;
-        margin: 22px 0 45px;
     }
 
-    .faixa{
-        gap: 38px;
-        grid-template-columns: 1fr;
+    .frase{
+        font-size: 23px;
         padding: 38px 27px;
     }
 
@@ -273,11 +224,5 @@ main{
         flex-direction: column;
         gap: 12px;
         padding: 25px 20px;
-    }
-}
-
-@media (max-width: 520px){
-    .lista-numeros{
-        grid-template-columns: 1fr;
     }
 }
